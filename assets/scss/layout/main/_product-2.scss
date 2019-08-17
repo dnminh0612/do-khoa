@@ -1,0 +1,167 @@
+.product-2{
+    margin-top: 100px;
+
+    .pr-container{
+        .row-1{
+            @include container(100%);
+            text-align: center;
+            margin-bottom: 25px;
+
+            .bg-tt-1{
+                @include container(50%);
+                width: 400px;
+                margin: 0 auto;
+                background: $cl-primary;
+                padding: 25px 0;
+                margin-top: -50px;
+                position: relative;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                &::after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-bottom: 35px solid $cl-primary-2;
+                    border-left: 0 solid transparent;
+                    border-right: 20px solid transparent;
+                    position: absolute;
+                    right: -20px;
+                    top: 0;
+                }
+                &::before{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-bottom: 35px solid $cl-primary-2;
+                    border-left: 20px solid transparent;
+                    border-right: 0 solid transparent;
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                }
+
+                h2{
+                    font-size: 25px;
+                    color: $white;
+                    font-family: $ft-titles;
+                    font-weight: 300;
+                    line-height: 30px;
+                }
+                
+            }
+        }
+
+        .row-2{
+            @include container-fb;
+
+            .box{
+                @include col-16;
+                padding: 15px;
+                // background: red;
+                // margin-bottom: 30px;
+
+                > div{
+                    transition: all .3s;
+                    overflow: hidden;
+                    cursor: pointer;
+                    min-height: 350px;
+
+                    &:hover{
+                        border: 1px solid $cl-primary;
+                        box-shadow: 2px 2px 7px $sd-1;
+                    }
+
+                    .img{
+                        img{
+                            @include img-res;
+                            width: 100%;
+                            height: 185px;
+                        }
+                    }
+                    .name-price-sale{
+                        text-align: center;
+                        padding: 20px 0;
+                        line-height: 25px;
+
+                        .name{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $cl-2;
+                            margin-bottom: 10px;
+                        }
+                        .price{
+                            color: $bg-1;
+                            
+                            span{
+                               text-decoration: line-through; 
+                            }
+
+                            .sale{
+                                color: $cl-primary;
+                                font-weight: 700;
+                                text-decoration: unset;
+                                margin-left: 5px;
+                            }
+                        }
+                        .price-sale{
+                            color: $cl-primary;
+                            font-size: 17px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive
+@include res(1199px){
+    .product-2{
+        margin-top: 50px;
+    }
+}
+
+@include res(991px){
+    .product-2{
+        .pr-container{
+            .row-2{
+                .box{
+                    @include col-25;
+                }
+            }
+        }
+    }
+}
+
+@include res(768px){
+    .product-2 {
+        .pr-container {
+            .row-1 {
+                .bg-tt-1 {
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res(600px){
+    .product-2 {
+        .pr-container {
+            .row-1 {
+                .bg-tt-1 {
+                    max-width: 95%;
+                }
+            }
+            .row-2 {
+                .box {
+                    @include col-50;
+                }
+            }
+        }
+    }
+}

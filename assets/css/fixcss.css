@@ -1,0 +1,599 @@
+fieldset.scheduler-border {
+  border: 1px black #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
+#mainDetail
+  .productTrademark
+  .pr-tr-container
+  .list-product
+  .item-product
+  .box {
+  height: 400px;
+}
+#mainDetail
+  .productTrademark
+  .pr-tr-container
+  .list-product
+  .item-product
+  .box
+  .img
+  img {
+  max-width: 100%;
+  height: auto;
+  max-height: 185px;
+  width: 100%;
+}
+/* #main .main-1 .video .product-1 .pr-container .row-2 .box > div:hover {
+    box-shadow: none !important;
+} */
+
+#main .main-1 .boxProduct .product-1 .pr-container .row-2 .box > div:hover {
+  box-shadow: none;
+}
+.row-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.row-pagination .pagination {
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+.row-pagination .pagination li a {
+  color: black;
+  padding: 10px;
+  display: block;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.button-dkkh {
+  background-color: #004a7f;
+
+  -webkit-border-radius: 10px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  font-family: Arial;
+
+  font-size: 20px;
+
+  padding: 5px 10px;
+
+  text-align: center;
+
+  text-decoration: none;
+}
+
+.button-dkkh:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #004a7f;
+    -webkit-box-shadow: 0 0 3px #004a7f;
+  }
+  50% {
+    background-color: #0094ff;
+    -webkit-box-shadow: 0 0 10px #0094ff;
+  }
+  100% {
+    background-color: #004a7f;
+    -webkit-box-shadow: 0 0 3px #004a7f;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #004a7f;
+    -moz-box-shadow: 0 0 3px #004a7f;
+  }
+  50% {
+    background-color: #0094ff;
+    -moz-box-shadow: 0 0 10px #0094ff;
+  }
+  100% {
+    background-color: #004a7f;
+    -moz-box-shadow: 0 0 3px #004a7f;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #004a7f;
+    box-shadow: 0 0 3px #004a7f;
+  }
+  50% {
+    background-color: #0094ff;
+    box-shadow: 0 0 10px #0094ff;
+  }
+  100% {
+    background-color: #004a7f;
+    box-shadow: 0 0 3px #004a7f;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #004a7f;
+    box-shadow: 0 0 3px #004a7f;
+  }
+  50% {
+    background-color: #0094ff;
+    box-shadow: 0 0 10px #0094ff;
+  }
+  100% {
+    background-color: #004a7f;
+    box-shadow: 0 0 3px #004a7f;
+  }
+}
+
+.button-dkkh {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+.onTop {
+  position: fixed;
+  z-index: 99;
+  bottom: 5%;
+  left: 95%;
+}
+
+@media screen and (max-width: 991px) {
+  .onTop {
+    left: 93%;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .onTop {
+    left: 92%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .onTop {
+    left: 89%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .onTop {
+    left: 87%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .onTop {
+    left: 83%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .onTop {
+    left: 78%;
+  }
+}
+
+.onTop i {
+  color: yellow;
+  font-size: 50px;
+}
+
+/* Call button */
+/*them nut call*/
+
+.fone {
+  font-size: 18px; /* chữ cạnh nút gọi */
+  color: #f00;
+  line-height: 40px;
+  font-weight: bold;
+  padding-left: 48px; /* cách bên trái cho chữ */
+  margin: 0 0;
+}
+.fix_tel {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  z-index: 999;
+} /* left 18px là cách bên trái 18px. nếu muốn cho nút gọi sang phải thay là right */
+.fix_tel a {
+  text-decoration: none;
+  display: block;
+}
+.tel {
+  background: #eae6ec;
+  width: 205px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  background-size: 40px;
+  border-radius: 28px;
+  border: none;
+}
+.ring-alo-phone {
+  background-color: transparent;
+  cursor: pointer;
+  height: 80px;
+  position: absolute;
+  transition: visibility 0.5s ease 0s;
+  visibility: hidden;
+  width: 80px;
+  z-index: 200000 !important;
+}
+.ring-alo-phone.ring-alo-show {
+  visibility: visible;
+}
+.ring-alo-phone.ring-alo-hover,
+.ring-alo-phone:hover {
+  opacity: 1;
+}
+.ring-alo-ph-circle {
+  animation: 1.2s ease-in-out 0s normal none infinite running
+    ring-alo-circle-anim;
+  background-color: transparent;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  border-radius: 100%;
+  height: 70px;
+  left: 10px;
+  opacity: 0.1;
+  position: absolute;
+  top: 12px;
+  transform-origin: 50% 50% 0;
+  transition: all 0.5s ease 0s;
+  width: 70px;
+}
+.ring-alo-phone.ring-alo-active .ring-alo-ph-circle {
+  animation: 1.1s ease-in-out 0s normal none infinite running
+    ring-alo-circle-anim !important;
+}
+.ring-alo-phone.ring-alo-static .ring-alo-ph-circle {
+  animation: 2.2s ease-in-out 0s normal none infinite running
+    ring-alo-circle-anim !important;
+}
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-circle,
+.ring-alo-phone:hover .ring-alo-ph-circle {
+  border-color: #009900;
+  opacity: 0.5;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle,
+.ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle {
+  border-color: #baf5a7;
+  opacity: 0.5;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
+  border-color: #009900;
+  opacity: 0.5;
+}
+.ring-alo-ph-circle-fill {
+  animation: 2.3s ease-in-out 0s normal none infinite running
+    ring-alo-circle-fill-anim;
+  background-color: #000;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  height: 30px;
+  left: 30px;
+  opacity: 0.1;
+  position: absolute;
+  top: 33px;
+  transform-origin: 50% 50% 0;
+  transition: all 0.5s ease 0s;
+  width: 30px;
+}
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-circle-fill,
+.ring-alo-phone:hover .ring-alo-ph-circle-fill {
+  background-color: rgba(0, 175, 242, 0.5);
+  opacity: 0.75 !important;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle-fill,
+.ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle-fill {
+  background-color: rgba(117, 235, 80, 0.5);
+  opacity: 0.75 !important;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle-fill {
+  background-color: rgba(0, 175, 242, 0.5);
+  opacity: 0.75 !important;
+}
+
+.ring-alo-ph-img-circle {
+  animation: 1s ease-in-out 0s normal none infinite running
+    ring-alo-circle-img-anim;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  height: 30px;
+  left: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 33px;
+  transform-origin: 50% 50% 0;
+  width: 30px;
+}
+
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-img-circle,
+.ring-alo-phone:hover .ring-alo-ph-img-circle {
+  background-color: #009900;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-img-circle,
+.ring-alo-phone.ring-alo-green:hover .ring-alo-ph-img-circle {
+  background-color: #75eb50;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-img-circle {
+  background-color: #009900;
+}
+@keyframes ring-alo-circle-anim {
+  0% {
+    opacity: 0.1;
+    transform: rotate(0deg) scale(0.5) skew(1deg);
+  }
+  30% {
+    opacity: 0.5;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+  }
+  100% {
+    opacity: 0.6;
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+}
+
+@keyframes ring-alo-circle-img-anim {
+  0% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+}
+@keyframes ring-alo-circle-fill-anim {
+  0% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+  }
+  50% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(1) skew(1deg);
+  }
+  100% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+  }
+}
+.ring-alo-ph-img-circle a img {
+  padding: 1px 0 12px 1px;
+  width: 30px;
+  position: relative;
+  top: -3px;
+  left: -3px;
+}
+/* END Call button */
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* ICON SOCIAL */
+.iconSocial{
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  overflow: hidden;
+}
+.iconSocial .icon a button{
+  width: 45px;
+  height: 45px;
+  
+  background: none;
+  outline: none;
+  border: none;
+}
+.iconSocial .icon a button img{
+  width: 100%;
+  height: auto;
+}
+/* shoppe */
+.iconSocial .icon-shopee{
+  padding-left: 5px;
+  transition: all .5s;
+}
+.iconSocial .icon-shopee:hover{
+  padding-left: 0;
+}
+.iconSocial .icon .a-shopee{
+  background: #FE5722;
+  display: block;
+}
+/* facebook */
+.iconSocial .icon-facebook:hover{
+  padding-left: 0;
+  transition: all .5s;
+}
+.iconSocial .icon-facebook{
+  padding-left: 5px;
+}
+.iconSocial .icon .a-facebook{
+  background: #3A559F;
+  display: block;
+}
+
+/* END ICON SOCIAL */
+@media screen and (max-width: 1280px) {
+  .hd-content
+    .hd-about-content
+    .top-navbar
+    .navbar
+    .phone
+    ul
+    li
+    a
+    .phone
+    .telephone {
+    font-size: 19px;
+  }
+  .hd-content .hd-about-content .top-navbar .navbar .phone ul li {
+    flex: 0 0 57%;
+  }
+  .respon-1280{
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  content .hd-about-content .top-navbar .navbar .phone ul li {
+    flex: 0 0 55%;
+  }
+  .ul-custom {
+    margin-bottom: unset;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hd-content
+    .hd-about-content
+    .top-navbar
+    .navbar
+    .menu-responsive
+    .categories-menu-mobile-hide-active {
+    width: 40%;
+  }
+  .row-responsive .col-responsive{
+     flex: 0 0 100% !important;
+     max-width: unset !important;
+  }
+  .row-responsive .col-respon-2{
+    order: -1 !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .respon-800{
+    display: none;
+  }
+  .hd-content .hd-about-content .top-navbar .navbar .phone ul li {
+    flex: 0 0 50%;
+  }
+  .hd-content
+    .hd-about-content
+    .top-navbar
+    .navbar
+    .menu-responsive
+    .categories-menu-mobile-hide
+    li
+    a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .respon-600{
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hd-content
+    .hd-about-content
+    .top-navbar
+    .navbar
+    .menu-responsive
+    .categories-menu-mobile-hide-active {
+    width: 100%;
+  }
+  .respon-400{
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .respon-375{
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .respon-320{
+    display: none;
+  }
+}
+
+/* *********** fix detail, footer,  */
+@media screen and (max-width: 991px) {
+  .ft-content .ft-about-content .content {
+    flex-wrap: wrap;
+  }
+  .ft-content .ft-about-content .content .content-sub {
+    flex: 0 0 100%;
+    margin-bottom: 25px;
+  }
+  #fanpage{
+    padding-left: 15%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #mainDetail .productInformation .pr-in-container .information {
+    flex: 0 0 100%;
+    margin-bottom: 25px;
+  }
+  #mainDetail .productInformation .pr-in-container .opinion {
+    flex: 0 0 100%;
+    margin-bottom: 25px;
+  }
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 25%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #mainDetail .productInformation .pr-in-container .opinion #fanpage{
+    padding-left: 0;
+  }
+}
